@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weaddo</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <div id="hero" class="slider-container">
+    <div class="slider-container-firstDiv">
+  <div id=" overlay-left" onclick="openMenu()">
+    <img src="/images/Group 54.png" alt="Menu" />
+  </div>
+
+  <div id="overlay-center">
+    <img src="/images/Logo.png" alt="Logo" />
+  </div>
+
+  <div id="overlay-right">
+    <img src="/images/Icon awesome-phone-alt.png" alt="" />
+    <p>+91 124-712504</p>
+  </div>
+</div>
+
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/Image 17.png" alt="Image 1" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="images/Image 17.png" alt="Image 2" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="images/Image 17.png" alt="Image 3" />
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-overlay" id="menuOverlay">
+        <button class="close-btn" onclick="closeMenu()">Close</button>
+
+        <div class="menu_div">
+          <ul class="menu-items">
+            <hr />
+            <li class="flip-scale-up-hor" style="--delay: 0.8s">HOME</li>
+            <hr />
+            <li class="flip-scale-up-hor" style="--delay: 0.12s">SERVICES</li>
+            <hr />
+            <li class="flip-scale-up-hor" style="--delay: 0.16s">WHO WE ARE</li>
+            <hr />
+            <li class="flip-scale-up-hor" style="--delay: 0.20s">
+              OUR TECHNOLOGY
+            </li>
+            <hr />
+            <li class="flip-scale-up-hor" style="--delay: 0.24s">CONTACT</li>
+            <hr />
+          </ul>
+
+          <ul class="menu-items2">
+            <div class="menu-items2-div">
+              <li style="--delay: 0.2s">GSSA</li>
+              <p>General sales and services Agents</p>
+            </div>
+
+            <div class="menu-items2-div">
+              <li style="--delay: 0.2s">GSA</li>
+              <p>General sales Agents</p>
+            </div>
+
+            <div class="menu-items2-div">
+              <li style="--delay: 0.6s">TCM</li>
+              <p>Total cart management</p>
+            </div>
+            <div class="menu-items2-div">
+              <li style="--delay: 0.2s">CSA</li>
+              <p>Control space agent</p>
+            </div>
+            <div class="menu-items2-div">
+              <li style="--delay: 0.2s">BSA</li>
+              <p>Back space agent</p>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Section -->
+    <section id="stats" class="stats-section">
+      <div class="leader-main-div">
+        <div class="leader-main-div-left">
+          <h2>Leader in Airline Representation and Cargo Services</h2>
+          <p>
+            Established in 1985, Group Concorde has been an avant-garde
+            customized and tailor-made solutions provider for Airlines with more
+            than 3 decades of experience in Airline representation (GSSA).
+          </p>
+          <h3>A GLANCE AT GROUP CONCORDE</h3>
+       
+        </div>
+
+        <div class="airplane-animation leader-main-div-right">
+          <img
+            src="/images/05.png"
+            class="plane-left"
+            alt="Plane flying left"
+          />
+        </div>
+      </div>
+
+      <div class="stats-container">
+        <div class="stat">
+          <span class="counter" data-target="35">0</span>
+          <p>YEARS OF EXPERIENCE</p>
+        </div>
+        <div class="stat">
+          <span class="counter" data-target="18">0</span>
+          <p>INTERNATIONAL OFFICES</p>
+        </div>
+        <div class="stat">
+          <span class="counter" data-target="430">0</span>
+          <p>STRONG TEAM</p>
+        </div>
+        <div class="stat">
+          <span class="counter" data-target="430">0</span>
+          <p>STRONG TEAM</p>
+        </div>
+      </div>
+      <h2 class="oursolutionheading">Our Solutions</h2>
+      <p style="margin-top: 30px">
+        Aliquam id varius mauris. Aenean sed ullamcorper eros. Nulla facilisi.
+        Aenean sed felis nec est ullamcorper consequat. Integer velit tellus,
+        commodo ut sapien sit amet, eleifend lacinia nisi.
+      </p>
+    </section>
+
+
+
+ <!-- Last Section -->
+ <div id="services"  class="lastSection">
+
+      <div class="lastSectionFirstDiv">
+        <h2 id="left-heading">General Sales & Service Agent</h2>
+        <div class="arrowsDiv">
+          <img
+            class="leftarrow"
+            src="./images/Icon feather-arrow-left.png"
+            alt=""
+            onclick="prevSlide()"
+          />
+          <img
+            class="rightarrow"
+            src="./images/Icon feather-arrow-right.png"
+            alt=""
+            onclick="nextSlide()"
+          />
+        </div>
+      </div>
+
+      <div class="lastSectionSecondDiv">
+        <div class="lastSectionSecondDivLeft">
+          <img id="left-image" src="./images/Mask Group 19.png" alt="" />
+          <p id="left-content">
+            Phasellus malesuada lectus et ex vestibulum semper vitae et dolor.
+            Phasellus posuere eu lorem vel aliquam. Vivamus egestas sit...
+          </p>
+        </div>
+
+        <div class="lastSectionSecondDivRight">
+          <img
+            class="slider-image"
+            src="/images/Mask Group 20.png"
+            alt=""
+            data-index="0"
+            onclick="changeLeftContent(0)"
+          />
+          <img
+            class="slider-image"
+            src="/images/Mask Group 21.png"
+            alt=""
+            data-index="1"
+            onclick="changeLeftContent(1)"
+          />
+          <img
+            class="slider-image"
+            src="/images/Mask Group 22.png"
+            alt=""
+            data-index="2"
+            onclick="changeLeftContent(2)"
+          />
+
+          <img
+            class="slider-image"
+            src="/images/Mask Group 20.png"
+            alt=""
+            data-index="3"
+            onclick="changeLeftContent(3)"
+          />
+          <img
+            class="slider-image"
+            src="/images/Mask Group 21.png"
+            alt=""
+            data-index="4"
+            onclick="changeLeftContent(4)"
+          />
+          <img
+            class="slider-image"
+            src="/images/Mask Group 22.png"
+            alt=""
+            data-index="5"
+            onclick="changeLeftContent(5)"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
+
+
